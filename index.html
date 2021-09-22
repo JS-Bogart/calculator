@@ -1,25 +1,25 @@
 <html>
+  <head>
+    <title>Calculator</title>
+    <script type="application/javascript" src="./src/calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css" />
+  </head>
 
-<head>
-  <title>Calculator</title>
-  <script type="application/javascript" src="./src/calculator.js"></script>
-  <!-- <script type="application/javascript" src="./dist/main.js"></script> -->
-  <link rel="stylesheet" type="text/css" href="./stylesheets/reset.css" />
-  <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css" />
-</head>
-
-<body>
-  <div>
-    <label for="input">Equation: </label>
-    <input type="text" id="input" value="12/5*9+9.4*2-1" />
-    <input type="button" value="calculate"
-      onclick="getElementById('result').value = calculate(getElementById('input').value)" />
-  </div>
-  
-  <div>
-    <label for="result">Result: </label>
-    <input type="text" id="result" />
-  </div>
-</body>
-
+  <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <div class="input-box">
+      <label for="input">Enter Equation: </label>
+      <input type="text" id="input" value="12/5*9+9.4*2-1" />
+      <input type="button" value="calculate"
+        onclick="getElementById('result').value = calculate(getElementById('input').value)" />
+    </div>
+    
+    <div class="output-box">
+      <label for="result">Result: </label>
+      <output type="text" id="result"></output>
+    </div>
+  </body>
 </html>

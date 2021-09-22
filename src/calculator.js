@@ -20,8 +20,10 @@ const calculate = (input) => {
 
   input = input.replace(/[^0-9*\/()\-+.]/g, '');
 
-  const opTest = /(\+|-|\*|\/)(\+|\*|\/)/
-  if (opTest.test(input)) {
+  const opTest1 = /(\+|-|\*|\/)(\+|\*|\/)/
+  const opTest2 = /^(\+|-|\*|\/)/
+  const opTest3 = /(\+|-|\*|\/)$/
+  if (opTest1.test(input) || opTest2.test(input) || opTest3.test(input)) {
     return "Syntax Error";
   }
 
@@ -39,8 +41,8 @@ const calculate = (input) => {
 
     while (exp.test(input)) {
       output = evaluate(RegExp.$1, RegExp.$2, RegExp.$3);
-      if (isNaN(output) || !isFinite(output))
-        return output;
+      if (!isFinite(output))
+        return "Do not divide by zero!";
       input = input.replace(exp, output);
     }
   }
