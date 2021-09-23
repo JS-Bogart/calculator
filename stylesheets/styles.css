@@ -1,0 +1,79 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(8,26,89);
+}
+
+h1 {
+  color: white;
+  font-size: 10vh;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(242,240,235);
+}
+
+.input-box > label {
+  font-size: 7vh;
+}
+
+.input-button {
+  background-color: rgb(50,73,245);
+  height: 7vh;
+  font-size: 5vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+
+#input {
+  height: 7vh;
+  width: fit-content;
+  text-align: center;
+  border-radius: 1vh;
+  font-size: 5vh;
+}
+
+.output-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(15,15,15);
+  color: white;
+}
+
+.output-box > label {
+  font-size: 7vh;
+  margin-top: 7vh;
+  margin-bottom: 2vh;
+}
+
+#result {
+  background-color: rgb(33,33,33);
+  height: 9vh;
+  min-width: 20vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-size: 7vh;
+  line-height: 9vh;
+  text-align: center;
+  border-radius: 1vh;
+}

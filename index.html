@@ -10,16 +10,18 @@
     <header>
       <h1>Calculator</h1>
     </header>
-    <div class="input-box">
-      <label for="input">Enter Equation: </label>
-      <input type="text" id="input" value="" />
-      <input type="button" value="calculate"
-        onclick="getElementById('result').value = calculate(getElementById('input').value)" />
-    </div>
-    
-    <div class="output-box">
-      <label for="result">Result: </label>
-      <output type="text" id="result"></output>
+    <div class="page">
+      <div class="input-box">
+        <label for="input">Enter Equation: </label>
+        <input type="text" id="input" value="" />
+        <input type="button" value="Calculate" class="input-button"
+          onclick="getElementById('result').value = calculate(getElementById('input').value)" />
+      </div>
+      
+      <div class="output-box">
+        <label for="result">Result: </label>
+        <output type="text" id="result"></output>
+      </div>
     </div>
   </body>
 </html>
