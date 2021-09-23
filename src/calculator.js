@@ -23,7 +23,12 @@ const calculate = (input) => {
   const opTest1 = /(\+|-|\*|\/)(\+|\*|\/)/
   const opTest2 = /^(\+|-|\*|\/)/
   const opTest3 = /(\+|-|\*|\/)$/
-  if (opTest1.test(input) || opTest2.test(input) || opTest3.test(input)) {
+  const opNumCheck = /(\+|-|\*|\/d*)/
+  if (opTest1.test(input) 
+    || opTest2.test(input) 
+    || opTest3.test(input)
+    || !opNumCheck.test(input)
+    ) {
     return "Syntax Error";
   }
 
