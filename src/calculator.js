@@ -21,7 +21,7 @@ const calculate = (input) => {
   input = input.replace(/[^0-9*\/()\-+.]/g, '');
 
   const opTest1 = /(\+|-|\*|\/)(\+|\*|\/)/
-  const opTest2 = /^(\+|-|\*|\/)/
+  const opTest2 = /^(\+|\*|\/)/
   const opTest3 = /(\+|-|\*|\/)$/
   const opNumCheck = /(\+|-|\*|\/d*)/
   if (opTest1.test(input) 
